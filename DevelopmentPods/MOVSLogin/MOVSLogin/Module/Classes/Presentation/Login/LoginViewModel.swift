@@ -43,6 +43,12 @@ class DefaultLoginViewModel: LoginViewModel {
         })
     }
     
+    func coordinateToMoviesModule() {
+        if let user = self.user {
+            view?.loginSuccess(user)
+        }
+    }
+    
     private func validationInputsFromLogin(_ username: String,_ password: String) -> Bool{
         self.error.value = ""
 
@@ -64,6 +70,7 @@ class DefaultLoginViewModel: LoginViewModel {
         return true
     }
     
+    
     private func handle(error: Error) {
         self.error.value = error.isInternetConnectionError ? "Revise su conexiǿn a internet" : "Error al ingresar las credenciales"
     }
@@ -73,4 +80,5 @@ extension DefaultLoginViewModel {
 
     func viewDidLoad() { }
 
+    
 }

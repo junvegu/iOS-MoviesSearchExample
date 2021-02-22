@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MOVSMovies
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -29,7 +30,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
-
+    func applicationDidEnterBackground(_ application: UIApplication) {
+        CoreDataStorage.shared.saveContext()
+    }
 
 }
 

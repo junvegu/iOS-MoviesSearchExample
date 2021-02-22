@@ -39,8 +39,8 @@ final class DIContainer: LoginCoordinatorDependencies {
         return LoginViewController.create(with: makeLoginViewModel(actions: actions))
 
     }
-    func makeLoginCoordinator(navigationController: UINavigationController) -> LoginCoordinator {
-        return LoginCoordinator(navigationController: navigationController, dependencies: self)
+    func makeLoginCoordinator(navigationController: UINavigationController, mainVC: UIViewController) -> LoginCoordinator {
+        return LoginCoordinator(navigationController: navigationController, dependencies: self, mainVC: mainVC)
     }
  
     

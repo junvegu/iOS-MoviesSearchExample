@@ -27,6 +27,8 @@ class LoginViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         bind(to: viewModel)
+        usernameUITextField.text = "Admin"
+        passwordUITextField.text = "Password*123"
         viewModel.viewDidLoad()
         let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
@@ -48,7 +50,7 @@ class LoginViewController : UIViewController {
     }
     
     private func navigateMain(){
-        viewModel.
+        viewModel.coordinateToMoviesModule()
     }
     
     private func updateLoading(_ loading: LoginViewModelLoading?){

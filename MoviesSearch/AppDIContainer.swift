@@ -9,16 +9,23 @@ import Foundation
 import MOVSAuthorization
 import MOVSNetworking
 import MOVSLogin
+import MOVSMovies
 
 final class AppDIContainer {
     
     
     // MARK: - Feature Modules
+    func makeMoviesSearchModule() -> MOVSMovies.Module {
+        let dependencies = MOVSMovies.ModuleDependencies(apiDataTransferService: apiDataTransferService,
+                                                           imageDataTransferService: imageDataTransferService)
+        return MOVSMovies.Module(dependencies: dependencies)
+    }
+    
     func makeLoginModule() -> MOVSLogin.Module {
         let dependencies = MOVSLogin.ModuleDependencies(apiDataTransferService: apiDataTransferService)
         return MOVSLogin.Module(dependencies: dependencies)
     }
-    
+   
     // MARK: - Network
     lazy var sessionManager = MOVSAuthorization(typeAuth: .bearer)
     
@@ -29,6 +36,12 @@ final class AppDIContainer {
         
         let apiDataNetwork = DefaultNetworkService(config: config, sessionManager: sessionManager)
         return DefaultDataTransferService(with: apiDataNetwork)
+    }()
+    lazy var imageDataTransferService: DataTransferService = {
+        let config = MOVSNetworkingSettings(url: URL(string: Credentials.imagePathUrl)!)
+        let imagesDataNetwork = DefaultNetworkService(config: config,
+                                                      sessionManager: sessionManager)
+        return DefaultDataTransferService(with: imagesDataNetwork)
     }()
 
 }

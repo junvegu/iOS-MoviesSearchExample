@@ -16,4 +16,7 @@
    <FileRef
       location = "group:DevelopmentPods/MOVSLogin/Example/MOVSLogin.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:DevelopmentPods/MOVSMovies/Example/MOVSMovies.xcodeproj">
+   </FileRef>
 </Workspace>

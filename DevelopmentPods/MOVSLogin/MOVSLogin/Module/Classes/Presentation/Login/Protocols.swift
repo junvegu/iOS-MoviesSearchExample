@@ -20,6 +20,7 @@ struct LoginItemViewModel: Equatable {
 }
 protocol LoginViewModelInput {
     func viewDidLoad()
+    func coordinateToMoviesModule()
 }
 
 protocol LoginViewModelOutput {

@@ -4,12 +4,15 @@ PODS:
     - Alamofire (= 5.2.0)
   - MOVSLogin (0.1.0):
     - MOVSNetworking
+  - MOVSMovies (0.1.0):
+    - MOVSNetworking
   - MOVSNetworking (0.1.0)
   - MOVSNetworking/Tests (0.1.0)
 
 DEPENDENCIES:
   - MOVSAuthorization (from `DevelopmentPods/MOVSAuthorization`)
   - MOVSLogin (from `DevelopmentPods/MOVSLogin`)
+  - MOVSMovies (from `DevelopmentPods/MOVSMovies`)
   - MOVSNetworking (from `DevelopmentPods/MOVSNetworking`)
   - MOVSNetworking/Tests (from `DevelopmentPods/MOVSNetworking`)
 
@@ -22,6 +25,8 @@ EXTERNAL SOURCES:
     :path: DevelopmentPods/MOVSAuthorization
   MOVSLogin:
     :path: DevelopmentPods/MOVSLogin
+  MOVSMovies:
+    :path: DevelopmentPods/MOVSMovies
   MOVSNetworking:
     :path: DevelopmentPods/MOVSNetworking
 
@@ -29,8 +34,9 @@ SPEC CHECKSUMS:
   Alamofire: c1ca147559e730bfb2182c8c7aafbdd90a867987
   MOVSAuthorization: fe44402f2441994c7ba50fac23a1efe036907412
   MOVSLogin: 829c8ab1914d1b5effb55b8ce92e1f9753c57b9b
+  MOVSMovies: bb60a133e8b4aa22b4a515a4620f66f993907270
   MOVSNetworking: 815633cf363c059e7d428322eb2bff09b212e81e
 
-PODFILE CHECKSUM: dd2587151c2a64ffe0a4e180a828480a22990a57
+PODFILE CHECKSUM: 25919c53069b003f52d5c10e88b12ee2faaa8df3
 
 COCOAPODS: 1.9.3

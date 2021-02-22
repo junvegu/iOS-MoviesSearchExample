@@ -16,7 +16,7 @@ public struct MOVSNetworkingSettings:  NetworkConfigurable {
     public let headers: [String: String]
     public let queryParameters: [String: String]
     
-    public init(url: URL, headers: [String: String] = [:], queryParameters: [String: String] ) {
+    public init(url: URL, headers: [String: String] = [:], queryParameters: [String: String] = [:] ) {
         self.base = url
         self.headers = headers
         self.queryParameters = queryParameters

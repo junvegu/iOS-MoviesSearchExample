@@ -20,9 +20,10 @@ final class AppFlowCoordinator {
     
     func start() {
         guard let navigationController = navigationController else { return }
-
-        // In App Flow we can check if user needs to login, if yes we would run login flow
         let loginVC = appDIContainer.makeLoginModule()
-        loginVC.startMoviesSearchFlow(in: navigationController)
+        let moviewVC = appDIContainer.makeMoviesSearchModule()
+        loginVC.startMoviesSearchFlow(in: navigationController, mainVC: moviewVC.moduleScreenMovies(in: UINavigationController()) )
     }
+    
+    
 }

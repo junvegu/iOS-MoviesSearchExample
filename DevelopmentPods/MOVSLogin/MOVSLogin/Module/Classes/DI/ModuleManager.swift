@@ -24,9 +24,13 @@ public struct Module {
         self.diContainer = DIContainer(dependencies: dependencies)
     }
     
-    public func startMoviesSearchFlow(in navigationController: UINavigationController) {
-        let flow = diContainer.makeLoginCoordinator(navigationController: navigationController)
+    public func startMoviesSearchFlow(in navigationController: UINavigationController, mainVC: UIViewController) {
+        let flow = diContainer.makeLoginCoordinator(navigationController: navigationController, mainVC: mainVC)
         flow.start()
+    }
+    
+    public func startManApp() {
+        
     }
 }
 

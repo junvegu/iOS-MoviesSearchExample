@@ -3,20 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2C04052415E0C2ABB7A0F782 /* libPods-MoviesSearchUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCD0315027ED4ABA8650587 /* libPods-MoviesSearchUITests.a */; };
 		45D1CC44E3EB47B73A4F2461 /* Pods_MoviesSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 569C77036C425F2274F4CD39 /* Pods_MoviesSearch.framework */; };
 		CE36194D25E2ABD900514A9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36194C25E2ABD900514A9F /* AppDelegate.swift */; };
-		CE36194F25E2ABD900514A9F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36194E25E2ABD900514A9F /* SceneDelegate.swift */; };
 		CE36195125E2ABD900514A9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36195025E2ABD900514A9F /* ViewController.swift */; };
 		CE36195425E2ABD900514A9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE36195225E2ABD900514A9F /* Main.storyboard */; };
 		CE36195625E2ABDC00514A9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE36195525E2ABDC00514A9F /* Assets.xcassets */; };
 		CE36195925E2ABDC00514A9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE36195725E2ABDC00514A9F /* LaunchScreen.storyboard */; };
 		CE36196425E2ABDD00514A9F /* MoviesSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36196325E2ABDD00514A9F /* MoviesSearchTests.swift */; };
 		CE36196F25E2ABDD00514A9F /* MoviesSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36196E25E2ABDD00514A9F /* MoviesSearchUITests.swift */; };
+		CE361EDB25E3395900514A9F /* AppFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE361EDA25E3395900514A9F /* AppFlowCoordinator.swift */; };
+		CE361EE025E3397700514A9F /* AppDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE361EDF25E3397600514A9F /* AppDIContainer.swift */; };
+		CE361EE825E339CF00514A9F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE361EE725E339CF00514A9F /* Constants.swift */; };
+		CE361F1625E347D100514A9F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE361F1525E347D100514A9F /* Media.xcassets */; };
 		FD465B5DC48AC447F9401411 /* libPods-MoviesSearchTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A41F04E4497E65A83E598527 /* libPods-MoviesSearchTests.a */; };
 /* End PBXBuildFile section */
 
@@ -48,7 +51,6 @@
 		BFE4FF03654EE1DC6F51F688 /* Pods-MoviesSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoviesSearch.release.xcconfig"; path = "Target Support Files/Pods-MoviesSearch/Pods-MoviesSearch.release.xcconfig"; sourceTree = "<group>"; };
 		CE36194925E2ABD900514A9F /* MoviesSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoviesSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE36194C25E2ABD900514A9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE36194E25E2ABD900514A9F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CE36195025E2ABD900514A9F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE36195325E2ABD900514A9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE36195525E2ABDC00514A9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,6 +62,10 @@
 		CE36196A25E2ABDD00514A9F /* MoviesSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoviesSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE36196E25E2ABDD00514A9F /* MoviesSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesSearchUITests.swift; sourceTree = "<group>"; };
 		CE36197025E2ABDD00514A9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE361EDA25E3395900514A9F /* AppFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowCoordinator.swift; sourceTree = "<group>"; };
+		CE361EDF25E3397600514A9F /* AppDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIContainer.swift; sourceTree = "<group>"; };
+		CE361EE725E339CF00514A9F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CE361F1525E347D100514A9F /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		D4FDB1BEEABB86D57101D813 /* Pods-MoviesSearch-MoviesSearchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoviesSearch-MoviesSearchUITests.release.xcconfig"; path = "Target Support Files/Pods-MoviesSearch-MoviesSearchUITests/Pods-MoviesSearch-MoviesSearchUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F629E75FD606FE51E27CFBD0 /* Pods-MoviesSearch-MoviesSearchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoviesSearch-MoviesSearchUITests.debug.xcconfig"; path = "Target Support Files/Pods-MoviesSearch-MoviesSearchUITests/Pods-MoviesSearch-MoviesSearchUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		FD070C9BE6CBD27C717F8827 /* Pods-MoviesSearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoviesSearchTests.release.xcconfig"; path = "Target Support Files/Pods-MoviesSearchTests/Pods-MoviesSearchTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -115,7 +121,6 @@
 				3AC4605732ED080668040203 /* Pods-MoviesSearchUITests.debug.xcconfig */,
 				305DCAB71359459523B51107 /* Pods-MoviesSearchUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -145,12 +150,15 @@
 			isa = PBXGroup;
 			children = (
 				CE36194C25E2ABD900514A9F /* AppDelegate.swift */,
-				CE36194E25E2ABD900514A9F /* SceneDelegate.swift */,
 				CE36195025E2ABD900514A9F /* ViewController.swift */,
 				CE36195225E2ABD900514A9F /* Main.storyboard */,
 				CE36195525E2ABDC00514A9F /* Assets.xcassets */,
 				CE36195725E2ABDC00514A9F /* LaunchScreen.storyboard */,
+				CE361F1525E347D100514A9F /* Media.xcassets */,
 				CE36195A25E2ABDC00514A9F /* Info.plist */,
+				CE361EDA25E3395900514A9F /* AppFlowCoordinator.swift */,
+				CE361EDF25E3397600514A9F /* AppDIContainer.swift */,
+				CE361EE725E339CF00514A9F /* Constants.swift */,
 			);
 			path = MoviesSearch;
 			sourceTree = "<group>";
@@ -282,6 +290,7 @@
 			files = (
 				CE36195925E2ABDC00514A9F /* LaunchScreen.storyboard in Resources */,
 				CE36195625E2ABDC00514A9F /* Assets.xcassets in Resources */,
+				CE361F1625E347D100514A9F /* Media.xcassets in Resources */,
 				CE36195425E2ABD900514A9F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,9 +402,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE361EDB25E3395900514A9F /* AppFlowCoordinator.swift in Sources */,
 				CE36195125E2ABD900514A9F /* ViewController.swift in Sources */,
+				CE361EE025E3397700514A9F /* AppDIContainer.swift in Sources */,
 				CE36194D25E2ABD900514A9F /* AppDelegate.swift in Sources */,
-				CE36194F25E2ABD900514A9F /* SceneDelegate.swift in Sources */,
+				CE361EE825E339CF00514A9F /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

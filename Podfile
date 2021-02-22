@@ -12,7 +12,7 @@ def authorization_pod
   pod 'MOVSAuthorization', :path => 'DevelopmentPods/MOVSAuthorization'
 end
 def login_pod
-  pod 'MOVSLogin', :path => 'DevelopmentPods/MOVSLogin'
+  pod 'MOVSLogin', :path => 'DevelopmentPods/MOVSLogin' 
 end
 
 def development_pods

@@ -6,6 +6,13 @@ public enum TypeAuth: String {
     case token = "Token "
     case noToken = ""
 }
+public struct AuthNetworkRequest {
+    let request: DataRequest
+    
+    public func cancel() {
+        request.cancel()
+    }
+}
 
 public class MOVSAuthorization {
     
@@ -17,7 +24,16 @@ public class MOVSAuthorization {
         self.session = Session(configuration: configuration, interceptor: AlamofireEnvironmentInterceptor())
         self.typeAuthorizationTokenn = typeAuth
     }
+    public func authRequest(_ request: URLRequest,
+                            completion: @escaping (Data?, URLResponse?, Error?) -> Void) -> AuthNetworkRequest {
 
+        let request = session.request(request)
+            .validate(statusCode: 200..<400)
+            .response { response in
+                completion(response.data, response.response, response.error)
+            }
+        return AuthNetworkRequest(request: request)
+    }
 }
 
 public struct AlamofireEnvironmentInterceptor: RequestInterceptor {

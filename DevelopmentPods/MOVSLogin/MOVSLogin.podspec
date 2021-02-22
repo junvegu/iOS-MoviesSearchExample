@@ -30,8 +30,10 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '11.0'
 
-  s.source_files = 'MOVSLogin/Classes/**/*.{swift}'
-  s.resources = 'MOVSLogin/Assets/**/*'
+  s.source_files = 'MOVSLogin/Module/**/*.{swift}'
+  s.resources = 'MOVSLogin/Module/**/*.{xcassets,json,storyboard,xib,xcdatamodeld}'
+  
+  
   s.dependency 'MOVSNetworking'
   # s.resource_bundles = {
   #   'MOVSLogin' => ['MOVSLogin/Assets/*.png']

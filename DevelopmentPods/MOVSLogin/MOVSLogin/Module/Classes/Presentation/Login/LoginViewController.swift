@@ -48,7 +48,6 @@ class LoginViewController : UIViewController {
     }
     
     private func navigateMain(){
-        viewModel.
     }
     
     private func updateLoading(_ loading: LoginViewModelLoading?){
